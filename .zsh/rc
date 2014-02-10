@@ -1,0 +1,12 @@
+. ~/.zsh/prompt # prompt config
+. ~/.zsh/options # zsh options
+. ~/.zsh/rvm # set up rvm
+
+gitlab-run () {
+  cd ~/tools/gitlab-runners/gitlab-ci-runner
+  ./bin/runner
+}
+
+export TAGGEM_API_KEY=955c8a72446227ab3f26bccae9e07b2d
+
+PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH:$HOME/.rvm/bin"
